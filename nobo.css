@@ -241,3 +241,16 @@ hr {
 .nob-wide {
   letter-spacing: 4px
 }
+
+img {
+  vertical-align: middle
+}
+
+a {
+  color: inherit
+}
+
+.nob-image {
+  max-width: 100%;
+  height: auto
+}
