@@ -254,3 +254,49 @@ a {
   max-width: 100%;
   height: auto
 }
+
+.nob-table, .nob-table-all {
+  border-collapse: collapse;
+  display: table;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.nob-table-all {
+  border: 1px solid #ccc;
+}
+
+.nob-bordered tr, .nob-table-all tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.nob-stripped tbody tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+.nob-table-all tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.nob-table-all tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+.nob-hoverable tbody tr:hover, .nob-ul.nob-hoverable li:hover {
+  background-color: #ccc;
+}
+
+.nob-centered tr th, .nob-centered tr td {
+  text-align: center;
+}
+
+.nob-table td, .nob-table th, .nob-table-all td, .nob-table-all th {
+  padding: 8px 8px;
+  display: table-cell;
+  text-align: left;
+  vertical-align: top;
+}
+
+.nob-table th:first-child, .nob-table td:first-child, .nob-table-all th:first-child, .nob-table-all td:first-child {
+  padding-left: 16px;
+}
