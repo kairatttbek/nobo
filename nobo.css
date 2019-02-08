@@ -300,3 +300,46 @@ a {
 .nob-table th:first-child, .nob-table td:first-child, .nob-table-all th:first-child, .nob-table-all td:first-child {
   padding-left: 16px;
 }
+
+.nobo-btn, .nobo-button {
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.nobo-btn:hover, .nobo-button:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.nobo-btn, .nobo-button {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+
+.nobo-disabled, .nobo-btn:disabled, .nobo-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.3
+}
+
+.nobo-disabled *, :disabled * {
+  pointer-events: none
+}
+
+.nobo-btn.nobo-disabled:hover,
+.nobo-btn:disabled:hover,
+.nobo-button.nobo-disabled:hover,
+.nobo-button:disabled:hover {
+  box-shadow: none
+}
