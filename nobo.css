@@ -371,3 +371,15 @@ a {
 .nobo-ul li:last-child {
   border-bottom: none;
 }
+
+.nobo-tooltip, .nobo-display-container {
+  position: relative
+}
+
+.nobo-tooltip .nobo-text {
+  display: none
+}
+
+.nobo-tooltip:hover .nobo-text {
+  display: inline-block
+}
