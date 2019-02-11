@@ -343,3 +343,16 @@ a {
 .nobo-button:disabled:hover {
   box-shadow: none
 }
+
+.nobo-badge, .nobo-tag {
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+}
+
+.nobo-badge {
+  border-radius: 50%;
+}
