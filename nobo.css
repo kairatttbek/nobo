@@ -383,3 +383,66 @@ a {
 .nobo-tooltip:hover .nobo-text {
   display: inline-block
 }
+
+.nobo-ripple {
+  transition: opacity 0s
+}
+
+.nobo-ripple:active {
+  opacity: 0.5
+}
+
+.nobo-input {
+  padding: 8px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 100%
+}
+
+.nobo-select {
+  padding: 9px 0;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc
+}
+
+.nobo-dropdown-click, .nobo-dropdown-hover {
+  position: relative;
+  display: inline-block;
+  cursor: pointer
+}
+
+.nobo-dropdown-hover:hover .nobo-dropdown-content {
+  display: block
+}
+
+.nobo-dropdown-hover:first-child, .nobo-dropdown-click:hover {
+  background-color: #ccc;
+  color: #000
+}
+
+.nobo-dropdown-hover:hover > .nobo-button:first-child, .nobo-dropdown-click:hover > .nobo-button:first-child {
+  background-color: #ccc;
+  color: #000
+}
+
+.nobo-dropdown-content {
+  cursor: auto;
+  color: #000;
+  background-color: #fff;
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  margin: 0;
+  padding: 0;
+  z-index: 1
+}
+
+.nobo-check, .nobo-radio {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: 6px
+}
+
