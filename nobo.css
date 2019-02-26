@@ -446,3 +446,20 @@ a {
   top: 6px
 }
 
+.nobo-responsive {
+  display: block;
+  overflow-x: auto
+}
+
+.nobo-container {
+  padding: 20px 40px;
+}
+
+.nobo-no-border {
+  border: 0 !important
+}
+
+.nobo-border {
+  border: 1px solid #ccc !important;
+}
+
