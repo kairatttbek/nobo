@@ -446,6 +446,104 @@ a {
   top: 6px
 }
 
+.nobo-sidebar {
+  height: 100%;
+  width: 200px;
+  background-color: #fff;
+  position: fixed !important;
+  z-index: 1;
+  overflow: auto
+}
+
+.nobo-bar-block .nobo-dropdown-hover, .nobo-bar-block .nobo-dropdown-click {
+  width: 100%
+}
+
+.nobo-bar-block .nobo-dropdown-hover .nobo-dropdown-content, .nobo-bar-block .nobo-dropdown-click .nobo-dropdown-content {
+  min-width: 100%
+}
+
+.nobo-bar-block .nobo-dropdown-hover .nobo-button, .nobo-bar-block .nobo-dropdown-click .nobo-button {
+  width: 100%;
+  text-align: left;
+  padding: 8px 16px
+}
+
+.nobo-main, #main {
+  transition: margin-left .4s
+}
+
+.nobo-modal {
+  z-index: 3;
+  display: none;
+  padding-top: 100px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4)
+}
+
+.nobo-modal-content {
+  margin: auto;
+  background-color: #fff;
+  position: relative;
+  padding: 0;
+  outline: 0;
+  width: 600px
+}
+
+.nobo-bar {
+  width: 100%;
+  overflow: hidden
+}
+
+.nobo-center .nobo-bar {
+  display: inline-block;
+  width: auto
+}
+
+.nobo-bar .nobo-bar-item {
+  padding: 8px 16px;
+  float: left;
+  width: auto;
+  border: none;
+  display: block;
+  outline: 0
+}
+
+.nobo-bar .nobo-dropdown-hover, .nobo-bar .nobo-dropdown-click {
+  position: static;
+  float: left
+}
+
+.nobo-bar .nobo-button {
+  white-space: normal
+}
+
+.nobo-bar-block .nobo-bar-item {
+  width: 100%;
+  display: block;
+  padding: 8px 16px;
+  text-align: left;
+  border: none;
+  white-space: normal;
+  float: none;
+  outline: 0
+}
+
+.nobo-bar-block.nobo-center .nobo-bar-item {
+  text-align: center
+}
+
+.nobo-block {
+  display: block;
+  width: 100%
+}
+
 .nobo-responsive {
   display: block;
   overflow-x: auto
@@ -461,5 +559,243 @@ a {
 
 .nobo-border {
   border: 1px solid #ccc !important;
+}
+
+.nobo-container:after, .nobo-container:before,
+.nobo-panel:after, .nobo-panel:before,
+.nobo-row:after, .nobo-row:before, .nobo-row-padding:after, .nobo-row-padding:before,
+.nobo-cell-row:before, .nobo-cell-row:after,
+.nobo-clear:after, .nobo-clear:before,
+.nobo-bar:before, .nobo-bar:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.nobo-col, .nobo-half, .nobo-third, .nobo-twothird, .nobo-threequarter, .nobo-quarter {
+  float: left;
+  width: 100%
+}
+
+.nobo-col.s1 {
+  width: 8.33333%
+}
+
+.nobo-col.s2 {
+  width: 16.66666%
+}
+
+.nobo-col.s3 {
+  width: 24.99999%
+}
+
+.nobo-col.s4 {
+  width: 33.33333%
+}
+
+.nobo-col.s5 {
+  width: 41.66666%
+}
+
+.nobo-col.s6 {
+  width: 49.99999%
+}
+
+.nobo-col.s7 {
+  width: 58.33333%
+}
+
+.nobo-col.s8 {
+  width: 66.66666%
+}
+
+.nobo-col.s9 {
+  width: 74.99999%
+}
+
+.nobo-col.s10 {
+  width: 83.33333%
+}
+
+.nobo-col.s11 {
+  width: 91.66666%
+}
+
+.nobo-col.s12 {
+  width: 99.99999%
+}
+
+@media (min-width: 601px) {
+  .nobo-col.m1 {
+    width: 8.33333%
+  }
+
+  .nobo-col.m2 {
+    width: 16.66666%
+  }
+
+  .nobo-col.m3, .nobo-quarter {
+    width: 24.99999%
+  }
+
+  .nobo-col.m4, .nobo-third {
+    width: 33.33333%
+  }
+
+  .nobo-col.m5 {
+    width: 41.66666%
+  }
+
+  .nobo-col.m6, .nobo-half {
+    width: 49.99999%
+  }
+
+  .nobo-col.m7 {
+    width: 58.33333%
+  }
+
+  .nobo-col.m8, .nobo-twothird {
+    width: 66.66666%
+  }
+
+  .nobo-col.m9, .nobo-threequarter {
+    width: 74.99999%
+  }
+
+  .nobo-col.m10 {
+    width: 83.33333%
+  }
+
+  .nobo-col.m11 {
+    width: 91.66666%
+  }
+
+  .nobo-col.m12 {
+    width: 99.99999%
+  }
+}
+
+@media (min-width: 993px) {
+  .nobo-col.l1 {
+    width: 8.33333%
+  }
+
+  .nobo-col.l2 {
+    width: 16.66666%
+  }
+
+  .nobo-col.l3 {
+    width: 24.99999%
+  }
+
+  .nobo-col.l4 {
+    width: 33.33333%
+  }
+
+  .nobo-col.l5 {
+    width: 41.66666%
+  }
+
+  .nobo-col.l6 {
+    width: 49.99999%
+  }
+
+  .nobo-col.l7 {
+    width: 58.33333%
+  }
+
+  .nobo-col.l8 {
+    width: 66.66666%
+  }
+
+  .nobo-col.l9 {
+    width: 74.99999%
+  }
+
+  .nobo-col.l10 {
+    width: 83.33333%
+  }
+
+  .nobo-col.l11 {
+    width: 91.66666%
+  }
+
+  .nobo-col.l12 {
+    width: 99.99999%
+  }
+}
+
+.nobo-content {
+  max-width: 980px;
+  margin: auto
+}
+
+.nobo-rest {
+  overflow: hidden
+}
+
+.nobo-cell-row {
+  display: table;
+  width: 100%
+}
+
+.nobo-cell {
+  display: table-cell
+}
+
+.nobo-cell-top {
+  vertical-align: top
+}
+
+.nobo-cell-middle {
+  vertical-align: middle
+}
+
+.nobo-cell-bottom {
+  vertical-align: bottom
+}
+
+.nobo-hide {
+  display: none !important
+}
+
+.nobo-show-block, .nobo-show {
+  display: block !important
+}
+
+.nobo-show-inline-block {
+  display: inline-block !important
+}
+
+@media (max-width: 600px) {
+  .nobo-modal-content {
+    margin: 0 10px;
+    width: auto !important
+  }
+
+  .nobo-modal {
+    padding-top: 30px
+  }
+
+  .nobo-dropdown-hover.nobo-mobile .nobo-dropdown-content, .nobo-dropdown-click.nobo-mobile .nobo-dropdown-content {
+    position: relative
+  }
+
+  .nobo-hide-small {
+    display: none !important
+  }
+
+  .nobo-mobile {
+    display: block;
+    width: 100% !important
+  }
+
+  .nobo-bar-item.nobo-mobile, .nobo-dropdown-hover.nobo-mobile, .nobo-dropdown-click.nobo-mobile {
+    text-align: center
+  }
+
+  .nobo-dropdown-hover.nobo-mobile, .nobo-dropdown-hover.nobo-mobile .nobo-btn, .nobo-dropdown-hover.nobo-mobile .nobo-button, .nobo-dropdown-click.nobo-mobile, .nobo-dropdown-click.nobo-mobile .nobo-btn, .nobo-dropdown-click.nobo-mobile .nobo-button {
+    width: 100%
+  }
 }
 
