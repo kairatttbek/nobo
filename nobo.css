@@ -549,8 +549,8 @@ a {
   overflow-x: auto
 }
 
-.nobo-container {
-  padding: 20px 40px;
+.nobo-container, .nobo-panel {
+  padding: 0.01em 16px;
 }
 
 .nobo-no-border {
